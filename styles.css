@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Use space-between to push elements to the top and bottom */
     height: 100vh;
     background-color: #282c35; /* Dark background color */
     color: #fff; /* Light text color */
@@ -13,6 +13,10 @@ body {
 
 #app {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1; /* Allow the #app to grow and take available space */
 }
 
 h1 {
@@ -22,6 +26,7 @@ h1 {
 
 input[type="file"] {
     margin-top: 5%;
+    margin-bottom: 2%; /* Add margin-bottom for spacing between input and button */
     padding: 5%;
     background-color: #61dafb;
     width: 200px;
@@ -34,7 +39,6 @@ input[type="file"] {
 }
 
 button {
-    margin-top: 5%;
     padding: 5%;
     background-color: #61dafb;
     color: #fff;
@@ -69,10 +73,11 @@ button:hover {
 }
 
 #audioPlayer {
-    width: 80%; /* Adjusted to 80% */
-    margin-top: 5%;
+    width: 80%;
     background-color: #4fa3d1; /* Matching color for the audio player */
     border-radius: 10px;
+    position: fixed; /* Fixed positioning to ensure it stays at the bottom */
+    bottom: 0; /* Position it at the bottom */
 }
 
 /* Customize the appearance of the audio player controls */

@@ -1,0 +1,92 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c35; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+#app {
+    text-align: center;
+}
+
+h1 {
+    color: #61dafb; /* React blue color */
+    font-size: 30px;
+}
+
+input[type="file"] {
+    margin-top: 5%;
+    padding: 5%;
+    background-color: #61dafb;
+    width: 200px;
+    height: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 80%;
+}
+
+button {
+    margin-top: 5%;
+    padding: 5%;
+    background-color: #61dafb;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 80%;
+}
+
+button:hover {
+    background-color: #4fa3d1; /* Slightly darker shade on hover */
+}
+
+#songList {
+    list-style: none;
+    padding: 0;
+    margin-top: 5%;
+}
+
+#songList li {
+    margin: 2%;
+    padding: 5%;
+    background-color: #61dafb;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 80%;
+}
+
+#songList li:hover {
+    background-color: #4fa3d1; /* Slightly darker shade on hover */
+}
+
+#audioPlayer {
+    width: 80%; /* Adjusted to 80% */
+    margin-top: 5%;
+    background-color: #4fa3d1; /* Matching color for the audio player */
+    border-radius: 10px;
+}
+
+/* Customize the appearance of the audio player controls */
+audio::-webkit-media-controls-panel {
+    background-color: #4fa3d1; /* Matching color for the controls panel */
+    border-radius: 25px;
+    border-color: #fff;
+}
+
+/* Customize the appearance of the volume control slider */
+audio::-webkit-media-slider-thumb {
+    background-color: #4fa3d1; /* White color for the slider thumb */
+}
+
+audio::-webkit-media-slider-runnable-track {
+    background-color: #61dafb; /* React blue color for the track */
+}
